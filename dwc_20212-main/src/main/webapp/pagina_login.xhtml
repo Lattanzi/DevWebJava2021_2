@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:head>
+		<meta charset="ISO-8859-1" />
+		<h:outputStylesheet library="css" name="style.css" />
+		<h:outputStylesheet library="primefaces" name="primeicons/primeicons.css" />
+		<title>LattaTechLogin</title>
+	</h:head>
+	<h:body>
+		<p:layout fullPage="true">
+			
+			<p:layoutUnit position="west" size="760">
+				<center><p:graphicImage id="imgLogo" library="images" name="LattaTechLogo2.0.png" width="730" height="730"/></center>
+			</p:layoutUnit>
+			
+			<p:layoutUnit position="center">
+				
+				 <p:spacer height="100" />
+				 <h:form>    
+				   	<center>
+					  	<h:panelGrid columns="2" cellpadding="20" styleClass="centered">                   			
+				        	<h:inputText  class="campoInputLogIn" id="userName" value="#{loginBean.userName}"  > 
+								    <f:passThroughAttribute name="placeholder" value="Username" />
+							</h:inputText>    
+				        	<i class="pi pi-user"/>
+				    	</h:panelGrid>
+				   	</center>
+				</h:form>
+				<center>
+				<h:panelGrid columns="2"  cellpadding="20">                   			 
+			        
+			        <h:inputSecret class="campoInputLogIn" type="password" id="userPassword" value="#{loginBean.password}">
+						 <f:passThroughAttribute name="placeholder" value="Password" />
+					</h:inputSecret>
+			        <i class="pi pi-lock"/>
+			    </h:panelGrid>
+			    </center>
+			    <center>
+					<h:panelGrid columns="2"  cellpadding="20"> 
+						<p:button href="./index.jsf" icon="pi pi-sign-in" value="Acessar"  />
+					</h:panelGrid>
+				</center>
+				<center>
+				<h:panelGrid columns="1"  cellpadding="80"> 
+					<h:outputText value="Gestor de Suporte e Consultoria de TI" />
+					
+					<h:outputText value="Desenvolvido por Lucas Lattanzi" />
+				</h:panelGrid>
+				</center>
+			</p:layoutUnit>
+		
+		</p:layout>
+	</h:body>
+</html>

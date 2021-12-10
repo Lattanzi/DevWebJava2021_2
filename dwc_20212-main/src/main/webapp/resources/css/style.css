@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.ui-analog-clock {
+	width: 200px;
+}
+
+.ui-panelgrid.showcase-text-align-center .ui-grid-responsive .ui-panelgrid-cell {
+    text-align: center;
+ }
+
+.customPanelGrid .ui-panelgrid-content {
+    align-items: center;
+}
+
+.panelGridCenter td,.panelGridCenter tr {
+    text-align: center;
+}
+
+.centered {
+	position: absolute;
+	height: 100px;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+	text-align: center;
+	left:50%;
+	margin-left:-100px;
+	width:200px;
+}
+
+.panelGridCenter {
+    margin: 0 auto;
+}
+
+.rightAlign{
+     margin-left: auto;
+ }
